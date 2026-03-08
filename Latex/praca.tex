@@ -1,0 +1,78 @@
+\documentclass[a4paper,12pt,twoside,openright]{mgr}
+
+%**************************************************************************
+% Dane do strony tytułowej
+%
+
+% Autor
+\autor{inż. Dawid Ziora}
+
+% Rodzaj pracy - wpisać LICENCJACKA, INŻYNIERSKA lub MAGISTERSKA
+\rodzajPracy{MAGISTERSKA}
+
+% Tytuł pracy magisterskiej/inżynierskiej
+\tytul{Wpływ wybranych frameworków Java na zwięzłość i czytelność kodu źródłowego}
+
+% Tytuł pracy magisterskiej w języku angielskim
+\tytulAng{The impact of selected Java frameworks on the conciseness and readability of source code}
+
+% Promotor
+\promotor{dr inż. Grzegorz Michalski}
+
+% Rok
+\rok{2026}
+
+% Kierunek
+\kierunek{Informatyka}
+
+% Studia stacjonarne lub niestacjonarne (wpisać jakie)
+\studia{stacjonarne}
+
+% Poziom studiów wpisać I lub II
+\poziomStudiow{II}
+
+% Numer albumu
+\numerAlbumu{136700}
+
+%
+%**************************************************************************
+
+% Styl dla wtrąceń anglojęzycznych
+\newcommand{\eng}[1]{(\emph{#1})}
+%\renewcommand{\baselinestretch}{1}
+\renewcommand\lstlistlistingname{Spis listingów}
+
+\begin{document}
+
+\pagestyle{empty}
+\stronaTytulowa
+\cleardoublepage
+\tableofcontents
+\pagestyle{fancy}
+
+\chapter{Wstęp}
+W pracy ... \cite{AcademyBank}
+\section{Cel pracy}
+\section{Zakres badań}
+\section{Struktura pracy}
+\chapter{Przegląd technologii}
+\section{Java}
+\subsection*{Quarkus}
+\subsection*{Spring Boot}
+\chapter{Narzędzia}
+\chapter{Analiza wyników badań}
+\chapter{Podsumowanie i wnioski}
+\chapter*{Streszczenie}
+\addcontentsline{toc}{chapter}{Streszczenie}
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\printbibliography[heading=bibintoc]
+
+\listoffigures
+
+\listoftables
+
+\lstlistoflistings
+
+\addcontentsline{toc}{chapter}{\lstlistlistingname}
+\end{document}
